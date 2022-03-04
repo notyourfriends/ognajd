@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <title>BLOG {{judul}} </title>
+    </head>
+
+    <body>
+        <h1>Selamat datang di Blog</h1>
+        <h2>kontributor {{ kontributor }}</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure animi aliquid saepe temporibus iste autem laboriosam delectus voluptates perspiciatis fuga quidem enim ipsam adipisci ducimus et, sint ratione vel maiores?</p>
+        <ul>
+            {# template Tags #}
+            {% for link, name in nav %}
+                <li><a href="{{ link }}">{{name}}</a></li>
+            {% endfor %}
+        </ul>
+    </body>
+</html>

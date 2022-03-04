@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title>{{subjudul}} | Kelas Terbuka</title>
+    </head>
+
+    <body>
+        <h1>Selamat Datang di {{ judul }}</h1>
+        <h2>Tutorial 10 Template Tags oleh {{kontributor}}</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam rerum ab excepturi nemo iure iusto amet laboriosam nostrum quis? Ut voluptatem corporis, facere ad nulla doloremque recusandae maxime voluptate repellendus.</p>
+        <ul>
+            {# template Tags #}
+            {% for link, name in nav %}
+                <li><a href="{{ link }}">{{name}}</a></li>
+            {% endfor %}
+        </ul>
+    </body>
+    
+</html>
