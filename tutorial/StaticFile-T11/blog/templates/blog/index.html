@@ -1,0 +1,22 @@
+{% load static%}
+
+<html>
+    <head>
+        <title>Blog Tutorial {{judul}}</title>
+    </head>
+
+    <body>
+        <img style="width: 100%;" src="{% static banner %}" alt="">
+        <h1>Selamat Datang di BLOG {{judul}}</h1>
+        <h2>Materi BLOG {{subjudul}} oleh {{kontributor}}</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim eveniet, architecto qui labore hic voluptatibus, doloribus ut minus repudiandae quaerat odit numquam distinctio rem sunt sint. Fugiat nobis mollitia ut!</p>
+        <ul>
+
+            {% for link, name in nav %}
+
+            <li><a href="{{link}}">{{name}}</a></li>
+        
+            {% endfor %}
+        </ul>
+    </body>
+</html>
